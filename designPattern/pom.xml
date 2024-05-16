@@ -1,0 +1,24 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>javaSE</groupId>
+        <artifactId>javaSE</artifactId>
+        <version>1.0</version>
+    </parent>
+    <groupId>designPattern</groupId>
+    <artifactId>designPattern</artifactId>
+    <packaging>pom</packaging>
+    <name>designPattern</name>
+    <url>https://maven.apache.org</url>
+    <modules>
+        <module>Adapter</module>
+        <module>Builder</module>
+        <module>Decorator</module>
+        <module>FactoryMethod</module>
+        <module>Prototype</module>
+        <module>SimpleFactory</module>
+    </modules>
+    <dependencies>
+    </dependencies>
+</project>

@@ -1,0 +1,10 @@
+# Project exclude paths
+/aDemo/target/
+/aParkingSystem/target/
+/designPattern/Adapter/target/
+/designPattern/Builder/target/
+/designPattern/Decorator/target/
+/designPattern/FactoryMethod/target/
+/designPattern/Prototype/target/
+/designPattern/SimpleFactory/target/
+/designSystem/target/
