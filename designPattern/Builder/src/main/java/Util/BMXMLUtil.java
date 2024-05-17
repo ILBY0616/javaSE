@@ -7,6 +7,7 @@ import org.w3c.dom.NodeList;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.File;
+import java.lang.reflect.Constructor;
 
 public class BMXMLUtil {
 	public static Object getBean() {
@@ -24,7 +25,9 @@ public class BMXMLUtil {
 
 			// 返回对象
 			Class<?> newClass = Class.forName(className);
-			return newClass.newInstance();
+			Constructor<?> constructor = newClass.getConstructor();
+			constructor.setAccessible(true);
+            return constructor.newInstance();
 		} catch (Exception exception) {
 			System.out.println("error: " + exception.getMessage());
 			return null;

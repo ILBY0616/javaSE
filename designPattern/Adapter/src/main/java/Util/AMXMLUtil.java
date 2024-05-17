@@ -7,6 +7,7 @@ import org.w3c.dom.NodeList;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.File;
+import java.lang.reflect.Constructor;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,7 +29,9 @@ public class AMXMLUtil {
 
                 // 创建对象
                 Class<?> newClass = Class.forName(className);
-                Object object = newClass.newInstance();
+                Constructor<?> constructor = newClass.getConstructor();
+                constructor.setAccessible(true);
+                Object object = constructor.newInstance();
                 beans.add(object);
             }
         } catch (Exception exception) {
