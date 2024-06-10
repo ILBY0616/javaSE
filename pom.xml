@@ -5,11 +5,9 @@
     <artifactId>javaSE</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>aParkingSystem</module>
         <module>aDemo</module>
         <module>designPattern</module>
         <module>designSystem</module>
-        <module>designPattern</module>
     </modules>
     <version>1.0</version>
     <name>javaSE</name>

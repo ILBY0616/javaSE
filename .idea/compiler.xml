@@ -14,9 +14,10 @@
         <module name="Adapter" />
         <module name="SimpleFactory" />
         <module name="designSystem" />
-        <module name="aParkingSystem" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="11" />
+    <bytecodeTargetLevel target="11">
+      <module name="aParkingSystem" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>
