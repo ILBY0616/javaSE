@@ -18,9 +18,9 @@ import java.io.ObjectInputStream;
 
 public class LoginFrame extends JFrame implements ActionListener {
 
-    private final Font maxFont = new Font("楷体",Font.BOLD,35);
-    private final Font midFont = new Font("楷体",Font.BOLD,20) ;
-    private final Font minFont = new Font("宋体",Font.BOLD,17) ;
+    private final Font maxFont = new Font("楷体", Font.BOLD, 35);
+    private final Font midFont = new Font("楷体", Font.BOLD, 20);
+    private final Font minFont = new Font("宋体", Font.BOLD, 17);
 
     private final JPanel loginPanel = new JPanel(new GridLayout(3, 2));
     private final JPanel buttonPanel = new JPanel();
@@ -85,13 +85,13 @@ public class LoginFrame extends JFrame implements ActionListener {
         loginPanel.add(nameText);
         loginPanel.add(userPassword);
         loginPanel.add(passwordText);
-        loginPanel.setBackground(new Color(170,210,230));
+        loginPanel.setBackground(new Color(170, 210, 230));
 
         // 设置透明
         buttonPanel.setOpaque(false);
         buttonPanel.add(login);
         buttonPanel.add(register);
-        buttonPanel.setBackground(new Color(170,210,230));
+        buttonPanel.setBackground(new Color(170, 210, 230));
 
         allPanel.setLayout(new GridLayout(3, 1));
         allPanel.add(tip);

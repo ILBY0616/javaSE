@@ -5,6 +5,7 @@ import AdaptiveTarget.ObjectCar;
 
 public class ObjectToyCar extends ObjectCar {
     ObjectToy objectToy = new ObjectToy();
+
     @Override
     public void run() {
         objectToy.flash();

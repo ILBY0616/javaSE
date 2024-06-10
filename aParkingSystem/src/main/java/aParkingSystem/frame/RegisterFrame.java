@@ -16,7 +16,6 @@ public class RegisterFrame extends JFrame implements ActionListener {
     private final Font maxFont = new Font("楷体", Font.BOLD, 35);
     private final Font midFont = new Font("楷体", Font.BOLD, 20);
     private final Font minFont = new Font("宋体", Font.BOLD, 17);
-    private JPanel allPanel;
     private final JPanel registerPanel = new JPanel(new GridLayout(2, 2));
     private final JPanel buttonPanel = new JPanel();
     private final JLabel tip = new JLabel("注 册 界 面", JLabel.CENTER);
@@ -26,6 +25,7 @@ public class RegisterFrame extends JFrame implements ActionListener {
     private final JTextField passwordText = new JTextField();
     private final JButton register = new JButton("注册");
     private final JButton back = new JButton("返回");
+    private JPanel allPanel;
 
     public RegisterFrame() {
         super("停车场管理系统");

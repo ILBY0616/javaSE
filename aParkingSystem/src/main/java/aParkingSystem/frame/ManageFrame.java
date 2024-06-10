@@ -47,13 +47,15 @@ public class ManageFrame extends JFrame implements ActionListener {
     private final int day = cal.get(Calendar.DAY_OF_MONTH);
     private final int hour = cal.get(Calendar.HOUR_OF_DAY);
     private final int minute = cal.get(Calendar.MINUTE);
-    private final JLabel startTime = new JLabel("进站时间", JLabel.CENTER);
     private final String timeString = year + "-" + month + "-" + day + "-" + hour + "-" + minute;
     private final JTextField startText = new JTextField(timeString);
+    private final JLabel startTime = new JLabel("进站时间", JLabel.CENTER);
     private final JButton register = new JButton("登记进站");
     private final int n = 50;
     private final Object[][] data = new Object[1][5];
     private final Object[][] totalData = new Object[n][5];
+    private final JTable totalTable = new JTable(totalData, tableName);
+    private final JScrollPane lastTable = new JScrollPane(totalTable);
     private final String[] tableName = {"车位", "车牌号", "进站时间", "出站时间", "收费"};
     private final JPanel thirdCard = new JPanel(new BorderLayout());
     private final JTable table = new JTable(data, tableName);
@@ -65,8 +67,6 @@ public class ManageFrame extends JFrame implements ActionListener {
     private final JButton endTime = new JButton("登记出站");
     private final JButton delete = new JButton("删除记录");
     private final JPanel lastCard = new JPanel(new BorderLayout());
-    private final JTable totalTable = new JTable(totalData, tableName);
-    private final JScrollPane lastTable = new JScrollPane(totalTable);
 
     public ManageFrame() {
         super("停车场管理系统");

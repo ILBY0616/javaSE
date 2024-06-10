@@ -1,5 +1,5 @@
 package AdaptiveTarget;
 
 public interface ClassCar {
-   void run();
+    void run();
 }

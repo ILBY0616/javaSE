@@ -1,4 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>javaSE</groupId>
@@ -9,6 +9,7 @@
         <module>aDemo</module>
         <module>designPattern</module>
         <module>designSystem</module>
+        <module>designPattern</module>
     </modules>
     <version>1.0</version>
     <name>javaSE</name>

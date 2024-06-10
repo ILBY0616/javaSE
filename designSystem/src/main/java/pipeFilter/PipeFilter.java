@@ -1,6 +1,7 @@
 package pipeFilter;
 
-import java.io.*;
+import java.io.PipedInputStream;
+import java.io.PipedOutputStream;
 
 public class PipeFilter {
     public static void main(String[] args) {

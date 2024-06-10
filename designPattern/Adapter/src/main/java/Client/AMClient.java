@@ -1,10 +1,13 @@
 package Client;
+
 import AdaptiveTarget.ClassCar;
 import AdaptiveTarget.ClassData;
 import AdaptiveTarget.ObjectCar;
 import AdaptiveTarget.ObjectData;
 import Util.AMXMLUtil;
+
 import java.util.List;
+
 public class AMClient {
     public static void main(String[] args) {
         List<Object> beans = AMXMLUtil.getBeans();

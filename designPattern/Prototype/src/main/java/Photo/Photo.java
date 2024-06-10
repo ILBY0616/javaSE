@@ -10,11 +10,11 @@ public class Photo implements Serializable {
         this.photoInfo = photoInfo;
     }
 
-    public void setPhotoInfo(String photoInfo) {
-        this.photoInfo = photoInfo;
-    }
-
     public String getPhotoInfo() {
         return photoInfo;
+    }
+
+    public void setPhotoInfo(String photoInfo) {
+        this.photoInfo = photoInfo;
     }
 }

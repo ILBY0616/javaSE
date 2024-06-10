@@ -7,7 +7,7 @@ import Decorator.ShakePhone;
 
 public class DMClient {
     public static void main(String[] args) {
-        Phone juniorPhone,seniorPhone,superPhone;
+        Phone juniorPhone, seniorPhone, superPhone;
 
         System.out.println("--------");
         juniorPhone = new JuniorPhone();

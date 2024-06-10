@@ -3,9 +3,6 @@ package Client;
 import Factory.CarFactory;
 import Product.Car;
 import Util.FMMXMLUtil;
-
-import java.util.Scanner;
-
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
@@ -17,6 +14,7 @@ import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 import java.io.File;
+import java.util.Scanner;
 
 public class FMMClient {
     public static void main(String[] args) {
